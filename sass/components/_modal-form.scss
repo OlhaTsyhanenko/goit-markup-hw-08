@@ -83,15 +83,15 @@
 .modal-form__policy {
   margin-left: 8px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.666;
+  letter-spacing: 0.03em;
+  // font-size: 14px;
+  // line-height: 1.71;
   color: $text-color-primary;
 }
 
 .modal-form__link-accept {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   color: $accent-color;
 }
 

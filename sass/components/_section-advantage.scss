@@ -5,24 +5,50 @@
 
 .section-advantage__title {
   color: $text-color-title;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .section-advantage__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 480px) {
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -30x;
+  }
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: -30px;
+  // margin-top: -30px;
 }
 
 .section-advantage__item {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  // flex-basis: calc((100% - 120px) / 4);
+  // margin-left: 30px;
+  // margin-top: 30px;
 
   &::before {
     display: block;

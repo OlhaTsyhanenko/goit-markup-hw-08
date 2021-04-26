@@ -1,8 +1,10 @@
 .logo {
   color: $accent-color;
   font-family: $font-logo;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.666;
+  // font-size: 26px;
+  // line-height: 1.2;
 
   &:hover,
   &:focus,
@@ -21,8 +23,8 @@
 }
 
 .footer-logo {
-  display: block;
-  margin-bottom: 20px;
+  // display: block;
+  // margin-bottom: 20px;
 
   &:hover,
   &:focus,
