@@ -1,0 +1,33 @@
+.logo {
+  color: $accent-color;
+  font-family: $font-logo;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus,
+  &:hover .part-logo,
+  &:focus .part-logo {
+    color: $accent-color;
+  }
+}
+
+.part-logo {
+  color: $text-color-black;
+
+  &--inverse {
+    color: $text-color-white;
+  }
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus,
+  &:hover .part-logo,
+  &:focus .part-logo {
+    color: $accent-color;
+  }
+}

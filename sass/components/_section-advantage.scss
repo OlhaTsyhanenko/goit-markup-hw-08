@@ -1,0 +1,45 @@
+.section-advantage {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.section-advantage__title {
+  color: $text-color-title;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-advantage__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.section-advantage__item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bg-second;
+    background-size: 70px 70px;
+  }
+}
+
+@each $picture in antenna, clock, diagram, astronaut {
+  .icon-#{$picture} {
+    &::before {
+      background-image: url('../images/#{$picture}.svg');
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.coordinates-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.coordinates-nav__item + .coordinates-nav__item {
+  margin-left: 50px;
+}
+
+.coordinates-nav__link {
+  display: flex;
+  align-items: center;
+  color: $text-color-primary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: currentColor;
+  }
+}
+
+.coordinates-nav__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.item-envelope {
+  margin-left: 10px;
+}

@@ -1,0 +1,25 @@
+.footer-socnetworks__list {
+  display: flex;
+}
+
+.footer-socnetworks__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $text-color-white;
+
+  transition: background-color $time $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-socnetworks__item:not(:last-child) {
+  margin-right: 10px;
+}
