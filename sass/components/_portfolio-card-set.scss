@@ -23,7 +23,7 @@
 }
 
 .card-set__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     &:not(:first-child) {
       margin-top: 30px;
     }

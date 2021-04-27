@@ -18,11 +18,8 @@
 .hero {
   color: $text-color-white;
   text-align: center;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -35,11 +32,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;
 
-  @media screen and (min-width: 480px) {
-    font-size: 26px;
-    line-height: 1.62;
-  }
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
