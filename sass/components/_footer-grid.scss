@@ -1,29 +1,60 @@
-// .footer-grid {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-.footer-grid__part {
-  text-align: center;
-  margin-bottom: 60px;
-
-  // flex-basis: calc((50% - 45px) / 2);
-  // align-self: baseline;
+.footer-grid {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
-// .footer-subscription {
-//   flex-basis: calc(50% - 15px);
-//   align-self: baseline;
-// }
+.footer-grid__address {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.footer-grid__part {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+    // margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-basis: calc(50% - 45px);
+    // justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
+.footer-subscription {
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(50% - 15px);
+    align-self: baseline;
+  }
+}
 
 .footer-socnetworks__title,
 .footer-subscription__title {
   margin-bottom: 20px;
-  // text-align: left;
   text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: $text-color-white;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
