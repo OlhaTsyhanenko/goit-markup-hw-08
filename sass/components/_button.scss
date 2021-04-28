@@ -2,6 +2,7 @@
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -101,4 +102,35 @@
   margin-right: auto;
   margin-left: auto;
   padding: 10px 55px 10px 56px;
+}
+
+.menu-btn {
+  @extend .btn;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  .icon-close_menu {
+    display: none;
+  }
+
+  &.is-open .icon-close_menu {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
