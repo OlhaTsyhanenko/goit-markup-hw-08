@@ -4,14 +4,17 @@
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.header-page__nav {
-  display: flex;
-  align-items: center;
-}
+// .header-page__nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .menu-container {
   background-color: $bg-white;
@@ -31,5 +34,10 @@
       flex-direction: column;
       padding: 48px 40px;
     }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
   }
 }

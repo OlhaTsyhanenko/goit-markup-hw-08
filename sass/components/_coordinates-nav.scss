@@ -1,7 +1,10 @@
-// .coordinates-nav {
-//   display: flex;
-//   margin-left: auto;
-// }
+.coordinates-nav {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 84px;
+  }
+  //   display: flex;
+  //   margin-left: auto;
+}
 
 // .coordinates-nav__item + .coordinates-nav__item {
 //   margin-left: 50px;
@@ -14,6 +17,11 @@
     }
     &:last-child {
       margin-bottom: 64px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
 }
@@ -29,6 +37,11 @@
   line-height: 1.16666;
   letter-spacing: 0.02em;
   color: $text-color-primary;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.1666;
+  }
 
   &:hover,
   &:focus {
@@ -54,12 +67,16 @@
 
   @media screen and (min-width: 768px) {
     fill: currentColor;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 10px;
   }
 }
 
 .item-envelope {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 10px;
   }
 }
