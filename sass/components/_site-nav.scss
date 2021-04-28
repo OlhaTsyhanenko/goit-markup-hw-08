@@ -2,13 +2,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-
-  // margin-left: 93px;
 }
-
-// .site-nav__item + .site-nav__item {
-//   margin-left: 50px;
-// }
 
 .site-nav__item {
   @media screen and (max-width: 767px) {
@@ -36,7 +30,6 @@
   @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.175;
-    // text-align: center;
   }
 
   @media screen and (min-width: 768px) {
