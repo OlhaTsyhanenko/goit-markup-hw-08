@@ -1,20 +1,34 @@
-.coordinates-nav {
-  display: flex;
-  margin-left: auto;
-}
+// .coordinates-nav {
+//   display: flex;
+//   margin-left: auto;
+// }
 
-.coordinates-nav__item + .coordinates-nav__item {
-  margin-left: 50px;
+// .coordinates-nav__item + .coordinates-nav__item {
+//   margin-left: 50px;
+// }
+
+.coordinates-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &:last-child {
+      margin-bottom: 64px;
+    }
+  }
 }
 
 .coordinates-nav__link {
-  display: flex;
-  align-items: center;
-  color: $text-color-primary;
+  // display: flex;
+  // align-items: center;
+
+  // font-size: 14px;
+  // line-height: 1.14;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.16666;
   letter-spacing: 0.02em;
+  color: $text-color-primary;
 
   &:hover,
   &:focus {
@@ -23,11 +37,29 @@
   }
 }
 
+.email {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1764;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}
+
 .coordinates-nav__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    fill: currentColor;
+    margin-right: 10px;
+  }
 }
 
 .item-envelope {
-  margin-left: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
 }

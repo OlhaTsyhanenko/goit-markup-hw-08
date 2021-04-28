@@ -1,36 +1,54 @@
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
+// .site-nav {
+//   display: flex;
+//   margin-left: 93px;
+// }
 
-.site-nav__item + .site-nav__item {
-  margin-left: 50px;
+// .site-nav__item + .site-nav__item {
+//   margin-left: 50px;
+// }
+
+.site-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 302px;
+    }
+  }
 }
 
 .site-nav__link {
-  display: block;
+  // display: block;
   color: $text-color-title;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.175;
+    text-align: center;
+  }
 
   &--current {
     color: $accent-color;
     position: relative;
 
-    &::after {
-      position: absolute;
-      bottom: -1px;
-      display: block;
-      content: '';
-      width: 100%;
-      height: 4px;
-      background-color: currentColor;
-      border-radius: 2px;
-    }
+    //   &::after {
+    //     position: absolute;
+    //     bottom: -1px;
+    //     display: block;
+    //     content: '';
+    //     width: 100%;
+    //     height: 4px;
+    //     background-color: currentColor;
+    //     border-radius: 2px;
+    //   }
   }
 
   &:hover,
