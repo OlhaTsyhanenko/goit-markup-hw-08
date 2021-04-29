@@ -1,4 +1,9 @@
 .coordinates-nav {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 84px;
   }
@@ -18,10 +23,10 @@
 .coordinates-nav__item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 64px;
     }
     &:last-child {
-      margin-bottom: 64px;
+      margin-bottom: 32px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -32,6 +37,8 @@
 }
 
 .coordinates-nav__link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16666;
@@ -48,15 +55,12 @@
     color: $accent-color;
     fill: currentColor;
   }
-}
-
-.email {
-  @media screen and (max-width: 767px) {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.1764;
-    letter-spacing: 0.02em;
-    color: $accent-color;
+  &.smartphone {
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 1.1764;
+      color: $accent-color;
+    }
   }
 }
 

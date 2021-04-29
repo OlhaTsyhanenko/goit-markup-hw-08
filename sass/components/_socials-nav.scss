@@ -1,11 +1,17 @@
 .socials-nav {
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -5px;
   }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.socials-nav__item {
+  margin-top: 5px;
 }
 
 .socials-nav__item:not(:last-child) {

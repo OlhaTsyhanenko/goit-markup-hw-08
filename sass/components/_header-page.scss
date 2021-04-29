@@ -13,6 +13,7 @@
 
 .menu-container {
   background-color: $bg-white;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
     display: none;
